@@ -39,7 +39,7 @@ class MobileController extends Controller
     {
         $devices=Device::all();
         $mobile=Mobile::where('id',$id)->first();
-        //print_r($mobile);die();
+      
         return view('template/admindashboard/pages/mobile/edit_mobile',compact('mobile','devices')); 
     }
     public function update_mobile(Request $request,$id)
