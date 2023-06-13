@@ -16,6 +16,7 @@ class HomeController extends Controller
         Session::forget('select_repair_device');
 
         $mobile=Mobile::all();
+        //print_r($mobile);die();
        return view('template/frontend/index',compact('mobile')); 
     }
    public function all_category_mbl($id)
